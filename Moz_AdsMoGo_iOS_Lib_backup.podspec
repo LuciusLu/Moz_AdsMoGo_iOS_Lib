@@ -20,10 +20,15 @@ Pod::Spec.new do |s|
   s.author             = { "LuciusLu" => "email@address.com" }
   s.platform     = :ios, "5.0"
   s.source       = { :git => "https://github.com/LuciusLu/Moz_AdsMoGo_iOS_Lib.git", :tag => "1.0.0" }
+  s.source_files  = "AdsMoGoSDK/*.{h,m}", "AdNetworkLibs/*.{h,m}"
+  s.vendored_frameworks = "GoogleMobileAds.framework"
+  s.public_header_files = "AdsMoGoSDK/*.h"
+  s.resources = "AdsMoGoRes/*.png","AdsMoGoRes/**/*.png"
 
   s.frameworks = "PassKit","AddressBook","Foundation","UIKit","CoreGraphics","QuartzCore","SystemConfiguration","CoreTelephony","CoreLocation","AudioToolbox","MessageUI","MapKit","MediaPlayer","AVFoundation","CoreMotion","CoreAudio","CoreMedia","MobileCoreServices","CFNetwork","Security","ImageIO","EventKit","EventKitUI","CoreData","StoreKit","Social","Accelerate","CoreText","iAd","CoreImage","AssetsLibrary","CoreFoundation"
   s.weak_frameworks = "AdSupport","GameController"
   s.libraries = "iconv", "sqlite3","sqlite3.0","z","z.1.2.5","stdc++","xml2"
+  s.ios.vendored_library =  "AdsMoGoSDK/*.a"
   s.requires_arc = false
 
 end
