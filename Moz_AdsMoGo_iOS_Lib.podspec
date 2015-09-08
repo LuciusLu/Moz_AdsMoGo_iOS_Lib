@@ -1,11 +1,9 @@
-
-
 Pod::Spec.new do |s|
 
 
   s.name         = "Moz_AdsMoGo_iOS_Lib"
   s.version      = "1.0.0"
-  s.summary      = ""
+  s.summary      = "It's OK."
   s.description  = <<-DESC
                    A longer description of Moz_AdsMoGo_iOS_Lib in Markdown format.
 
@@ -16,12 +14,12 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/LuciusLu/Moz_AdsMoGo_iOS_Lib"
-  s.license      = "MIT (example)"
+  s.license      = ":type => 'MIT', :file => 'LICENSE'"
   s.author             = { "LuciusLu" => "email@address.com" }
-  s.platform     = :ios, "5.0"
+  s.platform     = :ios
   s.source       = { :git => "https://github.com/LuciusLu/Moz_AdsMoGo_iOS_Lib.git", :tag => "1.0.0" }
-  s.source_files  = "*.{h,m}"
-  s.frameworks = "PassKit","AddressBook","Foundation","UIKit","CoreGraphics","QuartzCore","SystemConfiguration","CoreTelephony","CoreLocation","AudioToolbox","MessageUI","MapKit","MediaPlayer","AVFoundation","CoreMotion","CoreAudio","CoreMedia","MobileCoreServices","CFNetwork","Security","ImageIO","EventKit","EventKitUI","CoreData","StoreKit","Social","Accelerate","CoreText","iAd","CoreImage","AssetsLibrary","CoreFoundation"
+  s.source_files  = "AppConfig/*.{h,m}"
+  s.frameworks = "AddressBook","Foundation","UIKit","CoreGraphics","QuartzCore","SystemConfiguration","CoreTelephony","CoreLocation","AudioToolbox","MessageUI","MapKit","MediaPlayer","AVFoundation","CoreMotion","CoreAudio","CoreMedia","MobileCoreServices","CFNetwork","Security","ImageIO","EventKit","EventKitUI","CoreData","StoreKit","Social","Accelerate","CoreText","iAd","CoreImage","AssetsLibrary","CoreFoundation"
   s.weak_frameworks = "AdSupport","GameController"
   s.libraries = "iconv", "sqlite3","sqlite3.0","z","z.1.2.5","stdc++","xml2"
   s.requires_arc = false
